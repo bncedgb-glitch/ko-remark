@@ -1,0 +1,65 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Built binaries (compiled from source during setup)
+resources/hangul-compose-hook/hangul_hook.so
+resources/hangul-daemon/hangul-daemon
+resources/fonts/NotoSansCJKkr-Regular.otf
+resources/kbds/
+dist/bncedgb-glitch/
+
+# Development artifacts
+resources/source/*.so
+resources/source/hangul_hook_*.c
+resources/source/hangul_hook_diag.c
+!resources/source/hangul_hook.c
+
+# Default Next.js assets (unused)
+public/vercel.svg
+public/next.svg
+public/file.svg
+public/globe.svg
+public/window.svg
+
+# Temp files
+_*.js
+_*.ts
